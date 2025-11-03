@@ -17,5 +17,4 @@ class Circle:
 
 class PlotFunc:
     def __init__(self, expr: str):
-        self.expr = expr  # string expression, evaluated with x in locals
-
+        self.expr = expr  # string expression, evaluated with x in locals()

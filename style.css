@@ -1,0 +1,27 @@
+body{background:#f8f9fa}
+#plot{background:white;border:1px solid #ddd}
+
+/* Virtual keyboard (bottom center) */
+.virtual-kb{
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 12px;
+	background: rgba(255,255,255,0.98);
+	border-radius: 12px;
+	box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+	padding: 6px 8px;
+	z-index: 1050;
+	max-width: 980px;
+	width: calc(100% - 40px);
+}
+.virtual-kb .kb-row{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.virtual-kb .kb-btn{
+	background: #f1f3f5;border:1px solid #e6e9ee;border-radius:8px;padding:6px 10px;font-size:14px;cursor:pointer;
+}
+.virtual-kb .kb-btn:active{background:#e9ecef}
+
+@media (min-width: 992px){
+	.virtual-kb{max-width:760px}
+}
+
